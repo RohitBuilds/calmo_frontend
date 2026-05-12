@@ -274,6 +274,7 @@ function Login() {
 
       // ✅ FIXED: backend returns { token: "..." } not { access_token: "..." }
       saveToken(data.token)
+      console.log("Login successful, token saved:", data.token)
 
       navigate("/dashboard")
 
